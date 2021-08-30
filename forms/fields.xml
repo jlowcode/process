@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<form>
+    <fields addfieldpath="/administrator/components/com_fabrik/models/fields" name="params">
+        <fieldset name="plg-form-process" label="COM_FABRIK_OPTIONS">
+            <field name="p_processo"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_PROCESSO_LABEL"
+            />
+            <field name="p_titulo"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_TITULO_LABEL"
+                   description="PLG_FABRIK_FORM_PROCESS_TITULO_DESC"
+            />
+            <field name="p_etapa_anterior"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_ETAPA_ANTERIOR_LABEL"
+                   description="PLG_FABRIK_FORM_PROCESS_ETAPA_ANTERIOR_DESC"
+            />
+            <field name="p_elemento_acao"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_P_ELEMENTO_ACAO_LABEL"
+                   description="PLG_FABRIK_FORM_PROCESS_P_ELEMENTO_ACAO_DESC"
+            />
+            <field name="p_elemento_tipo"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_ELEMENTO_TIPO_LABEL"
+                   description="PLG_FABRIK_FORM_PROCESS_ELEMENTO_TIPO_DESC"
+            />
+            <field name="p_valor_tipo"
+                   type="fabrikmodalrepeat"
+                   icon="list"
+                   label="PLG_FABRIK_FORM_PROCESS_VALOR_TIPO_LABEL"
+                   description="PLG_FABRIK_FORM_PROCESS_VALOR_TIPO_DESC"
+            >
+                <fields name="params">
+                    <fieldset modal="true"
+                              name="p_valor_tipo_modal"
+                              repeat="true">
+                        <field name="p_type"
+                               label="PLG_FABRIK_FORM_PROCESS_VALOR_TIPO_LABEL"
+                               type="text"
+                        />
+                    </fieldset>
+                </fields>
+            </field>
+            <field name="p_lista_origem"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_LISTA_ORIGEM_LABEL"
+                   description="PLG_FABRIK_FORM_PROCESS_LISTA_ORIGEM_DESC"
+            />
+            <field name="p_condicional_texto"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_CONDICIONAL_TEXTO_LABEL"
+                   description="PLG_FABRIK_FORM_PROCESS_CONDICIONAL_TEXTO_DESC"
+            />
+            <field name="p_c_operacao"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_C_OPERACAO_LABEL"
+                   valueformat="tableelement"
+            />
+            <field name="p_c_elemento"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_C_ELEMENTO_LABEL"
+                   valueformat="tableelement"
+            />
+            <field name="p_c_condicional"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_C_CONDICIONAL_LABEL"
+                   valueformat="tableelement"
+            />
+            <field name="p_c_valor"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_C_VALOR_LABEL"
+                   valueformat="tableelement"
+            />
+            <field name="p_c_plugin"
+                   type="listfields"
+                   label="PLG_FABRIK_FORM_PROCESS_P_C_PLUGIN_LABEL"
+            />
+        </fieldset>
+
+        <fieldset name="plg-form-process-button" label="PLG_FABRIK_FORM_PROCESS_P_BUTTON">
+            <field name="p_button_label"
+                   label="PLG_FABRIK_FORM_PROCESS_P_BUTTON_LABEL"
+                   type="field"
+            />
+            <field name="p_button_style"
+                   label="PLG_FABRIK_FORM_PROCESS_P_BUTTON_STYLE"
+                   type="list">
+                <option value="btn-default">Default Button</option>
+                <option value="btn-primary">Primary Button</option>
+                <option value="btn-danger">Danger Button</option>
+                <option value="btn-success">Success Button</option>
+                <option value="btn-warning">Warning Button</option>
+            </field>
+        </fieldset>
+    </fields>
+</form>
